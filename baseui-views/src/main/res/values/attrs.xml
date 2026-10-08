@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseButton">
+        <attr name="baseVariant" format="enum">
+            <enum name="filled" value="0" />
+            <enum name="tonal" value="1" />
+            <enum name="outlined" value="2" />
+            <enum name="text" value="3" />
+        </attr>
+        <attr name="baseSize" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+        <attr name="loading" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseTextField">
+        <attr name="title" format="string" />
+        <attr name="isPassword" format="boolean" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseDropdownField">
+        <attr name="title" />
+        <attr name="android:entries" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseReorderView">
+        <attr name="defaultLayout" format="enum">
+            <enum name="list" value="0" />
+            <enum name="grid" value="1" />
+        </attr>
+        <attr name="gridColumns" format="integer" />
+    </declare-styleable>
+</resources>

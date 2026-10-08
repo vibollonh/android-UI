@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.example.baseui.views.BaseTextField
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sokha@example.com"
+            app:helperText="We never share your email"
+            app:startIconDrawable="@android:drawable/ic_dialog_email"
+            app:title="Email" />
+
+        <com.example.baseui.views.BaseTextField
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="secret123"
+            app:helperText="At least 8 characters"
+            app:isPassword="true"
+            app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+            app:title="Password" />
+
+        <com.example.baseui.views.BaseTextField
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="012 34"
+            app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+            app:title="Phone" />
+    </LinearLayout>
+</ScrollView>
